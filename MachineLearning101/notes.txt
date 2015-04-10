@@ -1,0 +1,32 @@
+Applications:
+- everywhere, taking over the world
+
+Automations spectrum
+- handcrafted
+    - brittle
+    - elif elif elif magic constants
+- statistics
+    - models
+    - p values 
+    - bayes
+- machine learning
+    - k means 
+    - svm
+- deep learning
+    - neural networks
+    - autoencoders
+    - convolutional NN
+
+
+
+Google keywords
+    - manifold hypothesis
+    - learning function parameters
+    - python package, anaconda, canopy
+    - matrix factorization
+
+
+
+Notes
+    - be very careful with test / train / cv split
+    - 
