@@ -1,0 +1,71 @@
+Cluster roads by name origin (English, Indian, etc)
+
+Need to classify street names by linguistic origin (machine learning)
+
+Then cluster and map geo data. 
+
+Google Keywords:
+    - geopandas
+    - scikit learn pipelines
+    - scikit transformers
+    - gridsearchcv
+
+
+
+NOTES
+
+- geopandas lets you plot deo data very easily
+- can use all the normal pandas operations. 
+
+
+Classification needs:
+- schema
+- train / test labelled sets, supervised algorithm
+- Numerical / bool features
+- etc
+
+
+Features: ngrams
+- different languages have different combinations of letter
+- useful for classification
+
+
+Classifiers
+- there's a cheatsheet in scikit learn for selecting a classifier
+- training and using the classifier is as easy as caret
+
+
+Choosing test metric:
+- there are several, accuracy score is appropriate for classification
+- classifier was 55% accurate
+
+
+Improve the classifier
+- more data
+- more features
+- hyperparameter tuning
+
+
+Feature selection is most important, can add
+- number of words
+- average length of words
+- are all the words in the dictionary
+- what are the metadata tags? 
+
+
+Pipelines
+- important concept
+- easy to tune and debug
+- use transformer classes
+
+
+HyperParamter tuning
+- tuning the parameters of the classifier algorithm
+- gridsearchcv
+- gridsearchcv acts on the entire pipeline, not just the algorithm
+
+
+Mapping:
+- mplleaflet
+- geopandas is great for mapping geo data
+
