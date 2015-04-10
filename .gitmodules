@@ -1,0 +1,3 @@
+[submodule "MachineLearning101/PyCon2015"]
+	path = MachineLearning101/PyCon2015
+	url = https://github.com/kastnerkyle/PyCon2015.git
