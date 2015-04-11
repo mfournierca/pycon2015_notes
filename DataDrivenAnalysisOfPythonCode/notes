@@ -1,0 +1,68 @@
+What is better code? 
+
+"Good code should not contain any bugs"
+
+Lots of good methods to write good code, tdd, code review, testing, debuggers, static analysis etc etc
+
+For this guy, must interesting thing is static analysis. 
+
+
+First way to find bugs is unit tests
+    - often as large as the function itself
+
+
+Static analysis:
+    - performed by computer
+    - code is not run, source is analyzed
+    - challenge is to teach a computer how to find these problems
+    - large area of research. 
+
+
+Steps:
+    - compile code into a data structure that can be analyxed
+        - abstract syntax tree
+    - annotate
+    - # 3 .... ? 
+
+
+Static analysis tools:
+    - PyLint
+    - PyFlakes
+    - Pep8
+    - start using these
+
+
+Tools above have some limitations
+    - difficult to extend
+    - long feedback cycles
+
+
+Rethink code analysis
+    - code is data
+    - make it easy
+    - learn from user feedback and publicly available code
+
+
+How? 
+    - construct abstract syntax tree
+
+
+Abstract Syntax Tree (AST)
+    - simple detection of xact dupes
+    - semantic diff of modules
+    - semantic code search on the whole tree
+    - no whitespace bs
+
+
+Detecting Errors:
+    - expect certain structure on the AST, check it
+    - need a language to do this
+    - regex and yaml, "list of requirements" to check on each node
+    - can detect attribute, else statement on for loop with no break, etc. 
+    - can require conditions on child nodes, traverse entire descendant tree, exclude nodes from this search, etc
+    - all done with a simple config language and regex
+
+
+Shouldn't think of code as text. Text is a representation only. LST is another representation which is better for some applications
+
+
