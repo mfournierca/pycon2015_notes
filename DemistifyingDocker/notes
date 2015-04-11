@@ -1,0 +1,37 @@
+docker containers 
+    - contain app dependancies, 
+    - os level dependancies, 
+    - etc etc
+    - eliminates environment mismatches
+
+
+What is it:
+    - not virtualization
+    - class of its own
+
+
+VMS:
+    - portaable, lots of overhead
+    - predictable
+    - slow
+
+CM Tools:
+    - less portable, minimal overhead
+    - not reproducible
+    - needs config management tools
+
+Docker:
+    - in between
+
+
+Workflows
+    - dev
+    - build
+    - deploy
+
+
+Docker registry
+    - deploy framework
+
+
+
