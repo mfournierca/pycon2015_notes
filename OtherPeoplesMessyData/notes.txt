@@ -1,0 +1,143 @@
+pandas basics
+
+read data
+    - many read functions, not just csv
+    - sql, excel, stata, etc etc
+    - unicode sandwich compliant
+
+chardet
+    - try to predict what encoding a string is in 
+
+unidecode
+    - don't do this unless you must
+    - drop special characters
+    
+
+types are important!
+    - 5 != '5'
+    - 5 != 5.0
+
+
+Merging on different types makes data disappear
+
+convert types
+
+be explicit
+
+do conversion upfront, make data predictable
+
+Kinds of nothing
+    - no data, None
+    - nullish "", 0
+
+
+ids are not numbers
+
+values
+    - ordinal
+    - category
+    - numeric
+    - etc
+
+
+dealing with missing daata
+    - replace, 
+    - na_values option in pandas.read_*
+    - .dropna
+    - .dropna(how="all")
+    - .fillna()
+    - .interpolate() - wow!
+
+
+Select multiple columns
+
+
+indexing
+    - logical operations, filters, etc, return list of indices
+
+
+.value_counts()
+    - count factors
+
+
+.value_counts()
+    - count factors
+
+
+.replace()
+
+.isin()
+
+
+~ operator
+
+
+.contains
+    - can use regex
+
+ 
+.pivot
+
+
+.groupby
+
+
+apply functionsto dataframe
+
+
+merging datasets:
+    - make sure types match
+    - check sizes before and after
+    - ditto for column counts
+    - try with how=inner, how=outer
+
+
+libraries
+    - fuzzywuzzy
+    - jellyfish
+
+
+Graphs
+    - ggplot
+    - bokeh
+    - seaborn
+    - matplotlib
+    - glue
+
+
+pdfs suck
+    - use tabula
+
+
+Scaling Up:
+    - don't let notebooks get in the way of reusable code
+    - data pipelines, OKFN Bubbles, Storm, Spark, etc. 
+
+
+Pattern
+    - wrangle data
+    - run calculations on _standardized_ data
+    - ???
+    - Profit!
+
+
+Be conscious about what you load into memory
+    
+
+Blaze
+    - pandas-like interface for querying large datasets
+
+
+Takeaways
+    - use proper types
+    - data has a way of being used in unanticipated ways
+    - documentation matters
+    - fix data before you need it fixed!
+        - fix it during collection if possible
+
+
+Data cleaning is a necessary evil, but it is evil. 
+
+
+
+

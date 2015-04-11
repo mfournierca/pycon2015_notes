@@ -1,0 +1,67 @@
+what is debugging? 
+    - when / why does this bug occur
+    - how to fix it 
+
+hard problems
+    - dependant on timing, ordering
+    - cross module boundaries
+    - independant, "safe" failures occuring at once
+
+Rules and Tools:
+    - everything is in scope
+        - compiler, stdlib, os, etc, etc. 
+        - play the odds
+    - always read the source
+        - all the source
+        - not the docs
+        - not the function sigs
+    - trust nothing, verify everything
+        - repr, logging _sometimes_ lie
+        - e.g. django code in pdb, lists look like query sets
+        - common methods, e.g. .close() could be monkey-patched
+        - verify that what is happening is what you expected
+    - get a lab notebook
+        - take notes
+        - what are the experiments I'm running
+        - here are the assumptions I'm making
+        - can use git as a notebook, commit each experiment to its own branch
+    - use all the tools
+        - os tracing tools, strace
+        - pdb
+        - grep, ag
+        - something comfortable for reading code
+        - domain specific tools
+        - osquery
+    - application specific instrumentation
+    
+
+Techniques
+    - pair debugging
+        - can be difficult
+        - super important
+    - minimization
+        - isolate the bug
+        - find a smaller program that reproduces the bug, keep making it smaller
+        - each time you remove a component, you reduce the number of interactions, take N! to (N-1)!
+        - comment out function calls and replace with the result, see if problem continues
+        - git bisect
+    - Proximate cause
+        - what change? 
+        - did you deploy? 
+        - changes in environment, how users are using tool, etc. 
+    - keep your eyes on the price
+        - just work on the bug
+        - don't fix anything else
+        - file tickets for other things
+        - complex failures are never caused by single points
+    - get out of production asap
+        - reproduce the bug on dev asap
+        - can't use all the tools in production, e.g. pdb
+    - non invasive techniques
+        - logging
+        - metrics
+        - monitoring
+
+Conclusion
+    - debugging is not an exact science
+  
