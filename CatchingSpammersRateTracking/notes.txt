@@ -1,0 +1,26 @@
+what is rate tracking? 
+    - how fast is someone doing something? 
+
+
+how to build it? 
+    - there's naive implementations
+
+
+building it with redis
+    - really fast reads and writes
+    - suports structured data types
+    - redis-py
+    
+keeping data in memory is a bit hard, they use a sharding cluster
+
+they use "divided time", time buckets using unix timestamp
+
+
+
+
+
+
+
+
+how would you do a probabilistic rate tracker? 
+

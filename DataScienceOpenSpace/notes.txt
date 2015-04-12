@@ -1,0 +1,11 @@
+tools
+
+- jupyter
+- etl
+- ipython notebooks
+
+
+notes 
+
+- keep trying
+- try new techniques
